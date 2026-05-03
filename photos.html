@@ -109,7 +109,7 @@
                 </div>
                 <div class="link-column">
                     <h3>Downloads</h3>
-                    <a href="assets/photos/website-photo-library.zip" download>All Photos ZIP</a>
+                    <a href="photos/website-photo-library.zip" download>All Photos ZIP</a>
                     <a href="photo-manifest.csv" download>Photo Manifest</a>
                 </div>
                 <div class="link-column">
@@ -122,7 +122,7 @@
             </div>
         </div>
         <div class="footer-bottom stagger-in">
-            <p>&copy; 2026 Premium Showcase Gallery. All rights reserved.</p>
+            <p>&copy; 2026 Image Gallery. All rights reserved.</p>
             <div class="footer-legal">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
@@ -147,7 +147,7 @@
             if (libraryThemeCount) libraryThemeCount.textContent = String(collectionThemes.length);
 
             photoLibraryGrid.innerHTML = photoLibrary.map((photo) => {
-                const src = `assets/photos/${photo.file}`;
+                const src = 'photos/${photo.file}`;
                 return `
                     <article class="photo-card">
                         <div class="photo-card-image">
