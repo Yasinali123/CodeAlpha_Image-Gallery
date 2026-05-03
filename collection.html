@@ -167,7 +167,7 @@
                 return `
                     <article class="gallery-item ${item.filter}${shapeClass}" data-category="${item.category}"
                         data-title="${item.title}" data-meta="${item.meta}" tabindex="0">
-                        <img src="assets/photos/${item.file}" alt="${item.title}" loading="lazy">
+                        <img src="photos/${item.file}" alt="${item.title}" loading="lazy">
                         <div class="overlay">
                             <span class="card-index">${String(index + 1).padStart(2, "0")}</span>
                             <h3>${item.title}</h3>
