@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Library - Premium Showcase Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+    <div class="page-noise"></div>
+
+    <nav class="navbar stagger-in">
+        <a href="index.html" class="nav-brand magnetic" data-magnetic>Gallery.</a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation"
+            aria-controls="nav-menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html" class="magnetic" data-magnetic>Home</a></li>
+                <li><a href="collection.html" class="magnetic" data-magnetic>Collection</a></li>
+                <li><a href="about.html" class="magnetic" data-magnetic>About</a></li>
+                <li><a href="contact.html" class="magnetic" data-magnetic>Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle magnetic" data-magnetic id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="contact.html" class="nav-cta magnetic" data-magnetic>Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="gallery-shell photo-library-page">
+        <section class="gallery-intro reveal">
+            <div>
+                <span class="eyebrow">Downloads</span>
+                <h2>Photo Library</h2>
+                <p class="hero-text">Every photo currently used across the website now lives in a local project
+                    library. Open each image at full size, download individual JPG files, or grab the full ZIP.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span id="library-total-count">0</span>
+                    <p>Unique photos</p>
+                </div>
+                <div class="stat-card">
+                    <span id="library-page-count">0</span>
+                    <p>Pages using them</p>
+                </div>
+                <div class="stat-card">
+                    <span id="library-theme-count">0</span>
+                    <p>Themed collections</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-panel reveal">
+            <div class="photo-library-actions">
+                <a href="assets/photos/website-photo-library.zip" download class="primary-link">Download All Photos</a>
+                <a href="collection.html" class="secondary-link">Back To Collection</a>
+            </div>
+            <div class="photo-library-grid" id="photo-library-grid"></div>
+        </section>
+    </main>
+
+    <footer class="footer reveal">
+        <div class="footer-watermark stagger-in">GALLERY</div>
+        <div class="footer-top">
+            <div class="footer-brand stagger-in">
+                <h2>Gallery.</h2>
+                <p>Curating the world's most breathtaking photography, one frame at a time. Elevate your visual
+                    experience.</p>
+            </div>
+            <div class="footer-links stagger-in">
+                <div class="link-column">
+                    <h3>Explore</h3>
+                    <a href="collection.html">Collection</a>
+                    <a href="photos.html">Photo Library</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="link-column">
+                    <h3>Downloads</h3>
+                    <a href="assets/photos/website-photo-library.zip" download>All Photos ZIP</a>
+                    <a href="photo-manifest.csv" download>Photo Manifest</a>
+                </div>
+                <div class="link-column">
+                    <h3>Socials</h3>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Behance</a>
+                    <a href="#">Dribbble</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom stagger-in">
+            <p>&copy; 2026 Premium Showcase Gallery. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="gallery-data.js"></script>
+    <script>
+        const photoLibrary = (window.galleryData && window.galleryData.photoLibrary) || [];
+        const collectionThemes = (window.galleryData && window.galleryData.collectionThemes) || [];
+        const photoLibraryGrid = document.getElementById("photo-library-grid");
+        const libraryTotalCount = document.getElementById("library-total-count");
+        const libraryPageCount = document.getElementById("library-page-count");
+        const libraryThemeCount = document.getElementById("library-theme-count");
+
+        if (photoLibraryGrid) {
+            const pageCount = new Set(photoLibrary.flatMap((photo) => photo.usedIn)).size;
+
+            if (libraryTotalCount) libraryTotalCount.textContent = String(photoLibrary.length);
+            if (libraryPageCount) libraryPageCount.textContent = String(pageCount);
+            if (libraryThemeCount) libraryThemeCount.textContent = String(collectionThemes.length);
+
+            photoLibraryGrid.innerHTML = photoLibrary.map((photo) => {
+                const src = `assets/photos/${photo.file}`;
+                return `
+                    <article class="photo-card">
+                        <div class="photo-card-image">
+                            <img src="${src}" alt="${photo.title}" loading="lazy">
+                        </div>
+                        <div class="photo-card-body">
+                            <span class="mini-label">${photo.category}</span>
+                            <h3>${photo.title}</h3>
+                            <p class="photo-card-meta">Used in ${photo.usedIn.join(", ")} and stored locally for this
+                                website.</p>
+                            <div class="photo-card-actions">
+                                <a href="${src}" download="${photo.file}" class="download-link">Download JPG</a>
+                                <a href="${src}" target="_blank" rel="noopener" class="text-link">Open Full Size</a>
+                            </div>
+                        </div>
+                    </article>
+                `;
+            }).join("");
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

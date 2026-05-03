@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+    <div class="page-noise"></div>
+
+    <nav class="navbar stagger-in">
+        <a href="index.html" class="nav-brand magnetic" data-magnetic>Gallery.</a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation"
+            aria-controls="nav-menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active magnetic" data-magnetic>Home</a></li>
+                <li><a href="collection.html" class="magnetic" data-magnetic>Collection</a></li>
+                <li><a href="about.html" class="magnetic" data-magnetic>About</a></li>
+                <li><a href="contact.html" class="magnetic" data-magnetic>Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle magnetic" data-magnetic id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="contact.html" class="nav-cta magnetic" data-magnetic>Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="floating-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+        <div class="hero-3d-container">
+            <div class="carousel-3d" id="hero-carousel-3d">
+                <div class="carousel__cell active" data-label="Featured"
+                    data-description="A beautiful display of natural wonders and serene environments.">
+                    <img src="assets/photos/nature-scene.jpg"
+                        alt="Nature Scene">
+                    <div class="cell-overlay"></div>
+                </div>
+                <div class="carousel__cell" data-label="Trending"
+                    data-description="Majestic creatures in their natural habitats.">
+                    <img src="assets/photos/wildlife-scene.jpg"
+                        alt="Wildlife Scene">
+                    <div class="cell-overlay"></div>
+                </div>
+                <div class="carousel__cell" data-label="Latest"
+                    data-description="Exploring the boundaries of modern technology.">
+                    <img src="assets/photos/tech-scene.jpg"
+                        alt="Tech Scene">
+                    <div class="cell-overlay"></div>
+                </div>
+                <div class="carousel__cell" data-label="Popular"
+                    data-description="Experience the breathtaking altitude and majestic peaks.">
+                    <img src="assets/photos/majestic-peaks.jpg"
+                        alt="Majestic Peaks">
+                    <div class="cell-overlay"></div>
+                </div>
+                <div class="carousel__cell" data-label="Discover"
+                    data-description="Feel the calming presence of the deep blue ocean.">
+                    <img src="assets/photos/ocean-breeze.jpg"
+                        alt="Ocean Breeze">
+                    <div class="cell-overlay"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-copy">
+            <span class="eyebrow">Showcase</span>
+            <h1>Discover Beauty In Every Frame.</h1>
+            <p class="hero-text">A cinematic home for nature, wildlife, travel, and modern culture photography.
+                Browse curated stories, explore standout collections, and bring more atmosphere to your screen.</p>
+            <div class="hero-chips">
+                <span>Nature</span>
+                <span>Wildlife</span>
+                <span>Technology</span>
+                <span>Travel</span>
+            </div>
+            <div class="hero-actions stagger-in">
+                <a href="collection.html" class="primary-link magnetic" data-magnetic>Explore Collection</a>
+                <a href="about.html" class="secondary-link magnetic" data-magnetic>Our Story</a>
+            </div>
+            <div class="stat-badges stagger-in">
+                <div class="badge magnetic" data-magnetic>
+                    <span class="badge-icon">01</span>
+                    <span class="badge-text">10K+ Images</span>
+                </div>
+                <div class="badge magnetic" data-magnetic>
+                    <span class="badge-icon">02</span>
+                    <span class="badge-text">Award Winning</span>
+                </div>
+            </div>
+            <div class="hero-mini-grid reveal">
+                <article class="mini-card">
+                    <span class="mini-label">Fresh Picks</span>
+                    <h3>Weekly visual drops</h3>
+                    <p>New curated edits every week so the homepage always feels alive.</p>
+                </article>
+                <article class="mini-card">
+                    <span class="mini-label">Licensing</span>
+                    <h3>Ready for projects</h3>
+                    <p>Find polished visuals for inspiration boards, branding, and digital experiences.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="hero-panel">
+            <span class="panel-label" id="hero-label">Featured</span>
+            <h2>Spotlight</h2>
+            <p class="panel-text" id="hero-description">A beautiful display of natural wonders and serene
+                environments.</p>
+            <div class="hero-progress">
+                <span id="hero-progress-bar"></span>
+            </div>
+            <div class="carousel-thumbnails">
+                <button class="thumb-dot active magnetic" data-magnetic data-index="0"
+                    aria-label="Go to slide 1"></button>
+                <button class="thumb-dot magnetic" data-magnetic data-index="1" aria-label="Go to slide 2"></button>
+                <button class="thumb-dot magnetic" data-magnetic data-index="2" aria-label="Go to slide 3"></button>
+                <button class="thumb-dot magnetic" data-magnetic data-index="3" aria-label="Go to slide 4"></button>
+                <button class="thumb-dot magnetic" data-magnetic data-index="4" aria-label="Go to slide 5"></button>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-line-container">
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="home-main">
+        <section class="home-section highlights reveal">
+            <div class="section-heading stagger-in">
+                <span class="eyebrow">Curated Highlights</span>
+                <h2>Designed to feel like an editorial homepage, not just a grid of images.</h2>
+                <p>Explore the strongest parts of the collection through themed selections, visual pacing, and quick
+                    ways to jump deeper into the archive.</p>
+            </div>
+            <div class="highlights-grid">
+                <article class="highlight-card highlight-card-large stagger-in">
+                    <div class="highlight-visual">
+                        <img src="assets/photos/warm-desert-landscape.jpg"
+                            alt="Warm desert landscape at sunset">
+                    </div>
+                    <div class="highlight-copy">
+                        <span class="mini-label">Editor Pick</span>
+                        <h3>Quiet landscapes with dramatic light</h3>
+                        <p>Soft horizons, rich tones, and spacious compositions selected to create a calm visual
+                            rhythm.</p>
+                        <a href="collection.html" class="text-link">View Landscape Series</a>
+                    </div>
+                </article>
+                <article class="highlight-card stagger-in">
+                    <span class="mini-label">Trending Now</span>
+                    <h3>Wildlife stories with motion and detail</h3>
+                    <p>Fast, expressive frames that bring movement and tension to the gallery experience.</p>
+                </article>
+                <article class="highlight-card stagger-in">
+                    <span class="mini-label">New Category</span>
+                    <h3>Urban nights and neon textures</h3>
+                    <p>More contrast, more glow, and a stronger visual mix for visitors who want something modern.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="home-section collection-preview reveal">
+            <div class="section-heading stagger-in">
+                <span class="eyebrow">Explore By Mood</span>
+                <h2>Choose a collection that matches the atmosphere you want.</h2>
+            </div>
+            <div class="preview-grid">
+                <a href="collection.html" class="preview-card stagger-in magnetic" data-magnetic>
+                    <img src="assets/photos/mountain-lake.jpg"
+                        alt="Mountain lake under blue sky">
+                    <div class="preview-overlay">
+                        <span class="card-index">01</span>
+                        <h3>Open Landscapes</h3>
+                        <p>Mountain air, deep horizons, and natural scale.</p>
+                    </div>
+                </a>
+                <a href="collection.html" class="preview-card stagger-in magnetic" data-magnetic>
+                    <img src="assets/photos/tiger-close-up-portrait.jpg"
+                        alt="Tiger close-up portrait">
+                    <div class="preview-overlay">
+                        <span class="card-index">02</span>
+                        <h3>Wild Encounters</h3>
+                        <p>Animal portraits and scenes full of focus and energy.</p>
+                    </div>
+                </a>
+                <a href="collection.html" class="preview-card stagger-in magnetic" data-magnetic>
+                    <img src="assets/photos/city-lights-reflection.jpg"
+                        alt="City lights reflected on wet road">
+                    <div class="preview-overlay">
+                        <span class="card-index">03</span>
+                        <h3>City Glow</h3>
+                        <p>Night scenes, reflections, and cinematic modern color.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="home-section value-strip reveal">
+            <div class="value-grid">
+                <article class="value-card stagger-in">
+                    <span class="value-number">1</span>
+                    <h3>Stronger first impression</h3>
+                    <p>The homepage now gives visitors more context, better pacing, and clearer actions from the very
+                        first screen.</p>
+                </article>
+                <article class="value-card stagger-in">
+                    <span class="value-number">2</span>
+                    <h3>Better browsing flow</h3>
+                    <p>Supporting sections guide people naturally toward the collection instead of leaving the hero to
+                        do all the work.</p>
+                </article>
+                <article class="value-card stagger-in">
+                    <span class="value-number">3</span>
+                    <h3>More premium feel</h3>
+                    <p>Glass panels, stronger spacing, and visual storytelling make the page feel more intentional and
+                        polished.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="home-section home-cta reveal">
+            <div class="cta-panel stagger-in">
+                <div class="cta-copy">
+                    <span class="eyebrow">Stay Inspired</span>
+                    <h2>Get the newest curated visuals before they land in the public gallery.</h2>
+                    <p>Follow the latest edits, featured sets, and seasonal selections with one quick click.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="contact.html" class="primary-link magnetic" data-magnetic>Join The List</a>
+                    <a href="collection.html" class="secondary-link magnetic" data-magnetic>Browse All Work</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer reveal">
+        <div class="footer-watermark stagger-in">GALLERY</div>
+        <div class="footer-top">
+            <div class="footer-brand stagger-in">
+                <h2>Gallery.</h2>
+                <p>Curating the world's most breathtaking photography, one frame at a time. Elevate your visual
+                    experience.</p>
+            </div>
+            <div class="footer-links stagger-in">
+                <div class="link-column">
+                    <h3>Explore</h3>
+                    <a href="collection.html">Collection</a>
+                    <a href="photos.html">Photo Library</a>
+                    <a href="collection.html">Featured</a>
+                    <a href="collection.html">Trending</a>
+                    <a href="collection.html">New Arrivals</a>
+                </div>
+                <div class="link-column">
+                    <h3>Company</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="about.html">Careers</a>
+                    <a href="about.html">Press</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="link-column">
+                    <h3>Socials</h3>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Behance</a>
+                    <a href="#">Dribbble</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom stagger-in">
+            <p>&copy; 2026 Image Gallery. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
